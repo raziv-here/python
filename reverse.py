@@ -7,8 +7,7 @@ for char in string:
     print(rev)
 
 
-
-    # to reverse a string
+ # to reverse a string
     sring = "Shisam Rajak"
     rev = sring[::-1]
     print(rev)
