@@ -28,3 +28,7 @@ print(my_student_details.Student_Name)
 print(my_student_details.Guardian_Name)
 print(my_student_details.Relation)
 print(my_student_details.Guardian_Number)
+
+#polymorphism= allows us to use a  single interface to represent different funtions
+#polumorphism means having forms like one 
+#c

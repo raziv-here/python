@@ -4,15 +4,17 @@ class Car:
         self.model = model
         self.battery_size = battery_size
     
-    def full_name(self):
-        return f"{self.brand}{self.model}"
-
-my_car = Car("Tesala", "X", "300KW")
-print(my_car.brand)
+    def get__brand(self):
+        return self.__brand
+    def set__brand(self, brand):
+        self.__brand = brand
+my_car = Car("Tesla", "X", "300KW")
+print(my_car.brand)  #accessing the private attribute using getter
 print(my_car.model)
 print(my_car.battery_size)
-print(my_car)
-print(my_car.full_name())
+my_car.set__brand("Toyota")
+print(my_car.get__brand())
+
 
 #Ihertiance
 class ElectricCar(Car):
@@ -27,3 +29,4 @@ print(my_electric_car.battery_size)
 print(my_electric_car.model)
 print(my_electric_car.brand)
 print(my_electric_car)
+
